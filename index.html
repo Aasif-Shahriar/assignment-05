@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Tailwind + DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>   
+     <!--Font Awesome CDN  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .font-poppins{
+            font-family: "Poppins", sans-serif;
+        }
+        .bg-primary{
+            background: #F4F7FF;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-primary w-full h-screen">
+    
+    <section class="container mx-auto grid grid-cols-4 grid-rows-2 gap-4 py-5">
+        <!-- nav section -->
+         <nav class="h-24 flex items-center justify-between col-span-4 bg-white px-5 rounded-lg">
+            <!-- logo -->
+             <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-4xl font-bold"><span class="font-light">Dev</span>Board</h2>
+             </div>
+             <!-- icon -->
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3 bg-primary px-5 py-3 rounded-full cursor-pointer">
+                    <img src="assets/checkbox.png" alt="">
+                    <h3 class="text-3xl font-bold">23</h3>
+                </div>
+                <!-- colorful icon -->
+                 <img class="bg-primary p-3 rounded-full" src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+        <!-- main container -->
+         <section class="bg-white rounded-lg col-span-3 grid gap-5 grid-cols-3 p-4">
+            <!-- Task, Discover, Time Section -->
+            <div class=" rounded-lg col-span-3   grid grid-cols-4 gap-4">
+                <!-- Task Icon -->
+                <div class="p-4 rounded-lg bg-primary flex items-center justify-between">
+                    <div class="bg-white p-4 rounded-full">
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium">Task Assigned</p>
+                        <h3 class="text-3xl font-bold">05</h3>
+                    </div>
+                </div>
+                <!-- Discover Card -->
+                <div class="p-5 rounded-lg col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white flex items-center gap-5">
+                    <img src="assets/board.png" alt="">
+                    <h4 class="font-medium text-2xl">Discover Something <br> New Today!</h4>
+                </div>
+                <!-- Time Card -->
+                <div class="p-3 rounded-lg bg-primary flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-full" >
+                        <img src="assets/calender.png" alt="">
+                    </div>
+                    <p class="text-2xl">Wed, <br> <span class="font-semibold">Jul 28 2025 </span></p>
+                </div>
+            </div>
+            <div class="bg-primary rounded-lg p-3"></div>
+            <div class="bg-primary rounded-lg p-3"></div>
+            <div class="bg-primary rounded-lg p-3"></div>
+            <div class="bg-primary rounded-lg p-3"></div>
+            <div class="bg-primary rounded-lg p-3"></div>
+            <div class="bg-primary rounded-lg p-3"></div>
+         </section>
+        <!-- aside container -->
+         <section class="bg-white rounded-lg p-4">
+
+         </section>
+    </section>
+</body>
+</html>
