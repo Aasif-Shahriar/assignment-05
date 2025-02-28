@@ -22,11 +22,25 @@
         .bg-primary{
             background: #F4F7FF;
         }
+        /* Generated from GPT */
+        .multiline-ellipsis {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .btn-primary{
+            background: #3752FD;
+        }
+
+
+
     </style>
 </head>
-<body class="font-poppins bg-primary w-full h-screen">
+<body class="font-poppins bg-primary w-full h-full">
     
-    <section class="container mx-auto grid grid-cols-4 grid-rows-2 gap-4 py-5">
+    <section class="container mx-auto grid grid-cols-4 gap-4 py-5">
         <!-- nav section -->
          <nav class="h-24 flex items-center justify-between col-span-4 bg-white px-5 rounded-lg">
             <!-- logo -->
@@ -41,13 +55,13 @@
                     <h3 class="text-3xl font-bold">23</h3>
                 </div>
                 <!-- colorful icon -->
-                 <img class="bg-primary p-3 rounded-full" src="assets/theme-btn.png" alt="">
+                 <img class="bg-primary p-3 rounded-full cursor-pointer" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
         <!-- main container -->
-         <section class="bg-white rounded-lg col-span-3 grid gap-5 grid-cols-3 p-4">
+         <section class="bg-white rounded-lg col-span-3 grid gap-5 grid-cols-3 p-6">
             <!-- Task, Discover, Time Section -->
-            <div class=" rounded-lg col-span-3   grid grid-cols-4 gap-4">
+            <div class=" col-span-3   grid grid-cols-4 gap-4 pb-5 border-b-2 border-dashed">
                 <!-- Task Icon -->
                 <div class="p-4 rounded-lg bg-primary flex items-center justify-between">
                     <div class="bg-white p-4 rounded-full">
@@ -71,17 +85,104 @@
                     <p class="text-2xl">Wed, <br> <span class="font-semibold">Jul 28 2025 </span></p>
                 </div>
             </div>
-            <div class="bg-primary rounded-lg p-3"></div>
-            <div class="bg-primary rounded-lg p-3"></div>
-            <div class="bg-primary rounded-lg p-3"></div>
-            <div class="bg-primary rounded-lg p-3"></div>
-            <div class="bg-primary rounded-lg p-3"></div>
-            <div class="bg-primary rounded-lg p-3"></div>
+            <!-- Cards Container -->
+            <!-- ShopEase Card -->
+            <div class="bg-primary rounded-lg p-6 space-y-4">
+                <p class="bg-white py-3 px-4 rounded-lg inline-block">ShopEase</p>
+                <h3 class="font-medium text-2xl">Fix Mobile Button Issue </h3>
+                <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
+                <div class="border border-dashed"></div>
+                <!-- complete button -->
+                 <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm">Deadline</p>
+                        <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <button class="btn-primary text-white py-2 px-4 rounded-lg">Completed</button>
+                 </div>
+            </div>
+            <!-- CloudSync Card -->
+            <div class="bg-primary rounded-lg p-6 space-y-4">
+                <p class="bg-white py-3 px-4 rounded-lg inline-block">CloudSync</p>
+                <h3 class="font-medium text-2xl">Add Dark Mode </h3>
+                <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                <div class="border border-dashed"></div>
+                <!-- complete button -->
+                 <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm">Deadline</p>
+                        <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <button class="btn-primary text-white py-2 px-4 rounded-lg">Completed</button>
+                 </div>
+            </div>
+            <!-- SwiftPay Card -->
+            <div class="bg-primary rounded-lg p-6 space-y-4">
+                <p class="bg-white py-3 px-4 rounded-lg inline-block">SwiftPay</p>
+                <h3 class="font-medium text-2xl">Optimize  Home page  </h3>
+                <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                <div class="border border-dashed"></div>
+                <!-- complete button -->
+                 <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm">Deadline</p>
+                        <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <button class="btn-primary text-white py-2 px-4 rounded-lg">Completed</button>
+                 </div>
+            </div>
+            <!-- Meta Card -->
+            <div class="bg-primary rounded-lg p-6 space-y-4">
+                <p class="bg-white py-3 px-4 rounded-lg inline-block">Meta</p>
+                <h3 class="font-medium text-2xl">Add new emoji 🤲</h3>
+                <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
+                <div class="border border-dashed"></div>
+                <!-- complete button -->
+                 <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm">Deadline</p>
+                        <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <button class="btn-primary text-white py-2 px-4 rounded-lg">Completed</button>
+                 </div>
+            </div>
+            <!-- Google LLC Card -->
+            <div class="bg-primary rounded-lg p-6 space-y-4">
+                <p class="bg-white py-3 px-4 rounded-lg inline-block">Google LLC</p>
+                <h3 class="font-medium text-2xl">Integrate OpenAI API  </h3>
+                <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
+                <div class="border border-dashed"></div>
+                <!-- complete button -->
+                 <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm">Deadline</p>
+                        <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <button class="btn-primary text-white py-2 px-4 rounded-lg">Completed</button>
+                 </div>
+            </div>
+            <!-- Glassdoar Card -->
+            <div class="bg-primary rounded-lg p-6 space-y-4">
+                <p class="bg-white py-3 px-4 rounded-lg inline-block">Glassdoar</p>
+                <h3 class="font-medium text-2xl">Improve Job searching  </h3>
+                <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
+                <div class="border border-dashed"></div>
+                <!-- complete button -->
+                 <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm">Deadline</p>
+                        <p class="font-medium">21 March 2025</p>
+                    </div>
+                    <button class="btn-primary text-white py-2 px-4 rounded-lg">Completed</button>
+                 </div>
+            </div>
+         
          </section>
         <!-- aside container -->
          <section class="bg-white rounded-lg p-4">
-
+            <button class="btn-primary text-white py-2 px-4 rounded-lg">Completed</button>
          </section>
     </section>
+    
 </body>
 </html>
