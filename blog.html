@@ -11,10 +11,6 @@
     <!-- Tailwind + DaisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>   
-     <!--Font Awesome CDN  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     <style>
         .font-poppins{
             font-family: "Poppins", sans-serif;
@@ -22,14 +18,6 @@
         .bg-primary{
             background: #F4F7FF;
         }
-        /* Generated from GPT */
-        .multiline-ellipsis {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-
         .btn-primary{
             background: #3752FD;
         }
@@ -49,7 +37,7 @@
                 <h2 class="text-4xl font-bold"><span class="font-light">Dev</span>Board</h2>
              </div>
              <!-- button -->
-             <button class="btn-primary text-white py-4 px-6 rounded-lg font-semibold text-xl">Back To Desk</button>
+             <button id="backward-btn" class="btn-primary text-white py-4 px-6 rounded-lg font-semibold text-xl">Back To Desk</button>
             </nav>
             <!-- Question Container -->
              <!-- Qs-1 -->
@@ -79,5 +67,6 @@
         </div>
     </section>
     
+    <script src="JavaScript/backward.js"></script>
 </body>
 </html>
