@@ -89,7 +89,7 @@
             <!-- ShopEase Card -->
             <div class="bg-primary rounded-lg p-6 space-y-4">
                 <p class="bg-white py-3 px-4 rounded-lg inline-block">ShopEase</p>
-                <h3 class="font-medium text-2xl">Fix Mobile Button Issue </h3>
+                <h3 id="shopease-title" class="font-medium text-2xl title">Fix Mobile Button Issue </h3>
                 <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
                 <div class="border border-dashed"></div>
                 <!-- complete button -->
@@ -104,7 +104,7 @@
             <!-- CloudSync Card -->
             <div class="bg-primary rounded-lg p-6 space-y-4">
                 <p class="bg-white py-3 px-4 rounded-lg inline-block">CloudSync</p>
-                <h3 class="font-medium text-2xl">Add Dark Mode </h3>
+                <h3 id="cloudsync-title" class="font-medium text-2xl title">Add Dark Mode </h3>
                 <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                 <div class="border border-dashed"></div>
                 <!-- complete button -->
@@ -119,7 +119,7 @@
             <!-- SwiftPay Card -->
             <div class="bg-primary rounded-lg p-6 space-y-4">
                 <p class="bg-white py-3 px-4 rounded-lg inline-block">SwiftPay</p>
-                <h3 class="font-medium text-2xl">Optimize  Home page  </h3>
+                <h3 id="swiftpay-title" class="font-medium text-2xl title">Optimize  Home page  </h3>
                 <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                 <div class="border border-dashed"></div>
                 <!-- complete button -->
@@ -134,7 +134,7 @@
             <!-- Meta Card -->
             <div class="bg-primary rounded-lg p-6 space-y-4">
                 <p class="bg-white py-3 px-4 rounded-lg inline-block">Meta</p>
-                <h3 class="font-medium text-2xl">Add new emoji 🤲</h3>
+                <h3 id="meta-title" class="font-medium text-2xl title">Add new emoji 🤲</h3>
                 <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
                 <div class="border border-dashed"></div>
                 <!-- complete button -->
@@ -149,7 +149,7 @@
             <!-- Google LLC Card -->
             <div class="bg-primary rounded-lg p-6 space-y-4">
                 <p class="bg-white py-3 px-4 rounded-lg inline-block">Google LLC</p>
-                <h3 class="font-medium text-2xl">Integrate OpenAI API  </h3>
+                <h3 id="google-title" class="font-medium text-2xl title">Integrate OpenAI API  </h3>
                 <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
                 <div class="border border-dashed"></div>
                 <!-- complete button -->
@@ -163,8 +163,8 @@
             </div>
             <!-- Glassdoar Card -->
             <div class="bg-primary rounded-lg p-6 space-y-4">
-                <p class="bg-white py-3 px-4 rounded-lg inline-block">Glassdoar</p>
-                <h3 class="font-medium text-2xl">Improve Job searching  </h3>
+                <p class="bg-white py-3 px-4 rounded-lg inline-block">Glassdoor</p>
+                <h3 id="glassdoor-title" class="font-medium text-2xl title">Improve Job searching  </h3>
                 <p class="bg-white p-2 leading-8 rounded-lg multiline-ellipsis">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly. and ensure onClick works properly</p>
                 <div class="border border-dashed"></div>
                 <!-- complete button -->
@@ -180,12 +180,15 @@
          </section>
         <!-- aside container -->
         <aside class="bg-white rounded-lg py-4">
-            <div class="text-center border-b border-dashed py-4 space-y-4">
+            <div class="text-center border-b-2 border-dashed py-4 space-y-4">
                 <div class="flex items-center justify-center gap-3 w-full">
                     <img src="assets/activity.png" alt="">
                     <h5 class="font-medium text-xl">Activity Log</h5>
                 </div>
-                <button class="btn-primary text-white py-2 px-4 rounded-lg">Clear History</button>
+                <button id="clear-history-btn" class="btn-primary text-white py-2 px-4 rounded-lg">Clear History</button>
+            </div>
+            <div id="clicked-history" class="px-4 py-6 space-y-4">
+               <!-- here items will be added dynamically -->
             </div>
         </aside>
         
@@ -194,7 +197,7 @@
     
 
     <!-- Script File -->
-    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/index.js"></script>
     <script src="JavaScript/blog.js"></script>
 </body>
 </html>
