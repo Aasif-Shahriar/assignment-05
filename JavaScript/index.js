@@ -34,13 +34,11 @@ for (let i = 0; i < buttons.length; i++) {
     clickedHistoryContainer.appendChild(div);
     div.classList.add("bg-primary", "p-4", "rounded-lg");
 
-    const taskTitle = button
-      .closest(".bg-primary")
-      .querySelector(".title").innerText;
+
     const date = new Date();
     const taskCompleteTime = date.toLocaleTimeString();
 
-    div.innerText = `You have completed the task "${taskTitle}" at ${taskCompleteTime}`;
+    div.innerText = `You have completed the task "Fix Mobile Button Issue" at ${taskCompleteTime}`;
 
     document
       .getElementById("clear-history-btn")
