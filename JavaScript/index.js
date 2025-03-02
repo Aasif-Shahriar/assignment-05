@@ -3,7 +3,10 @@ const buttons = document.querySelectorAll(".complete-btn");
 for (let i = 0; i < buttons.length; i++) {
   const button = buttons[i];
 
-  button.addEventListener("click", function () {
+  button.addEventListener("click", function (e) {
+    const title = e.target.parentNode.parentNode.querySelector('.title').innerText;
+    
+    console.log(title)
     alert("Board updated Successfully");
 
     const taskUpdate = document.getElementById("task-update");
@@ -34,11 +37,11 @@ for (let i = 0; i < buttons.length; i++) {
     clickedHistoryContainer.appendChild(div);
     div.classList.add("bg-primary", "p-4", "rounded-lg");
 
-
+    
     const date = new Date();
     const taskCompleteTime = date.toLocaleTimeString();
 
-    div.innerText = `You have completed the task "Fix Mobile Button Issue" at ${taskCompleteTime}`;
+    div.innerText = `You have completed the task "${title}" at ${taskCompleteTime}`;
 
     document
       .getElementById("clear-history-btn")

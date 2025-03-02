@@ -4,7 +4,7 @@ let colors = ['#ade8f4', '#b7b7a4', '#adb5bd', '#95d5b2', '#b5e48c','#edc4b3', '
 
 
 bgChangeBtn.addEventListener('click', function(){
-    let randomColor = colors[Math.floor(Math.random() * colors.length)]
+    let randomColor = colors[Math.floor(Math.random() * colors.length + 1)]
     body.style.backgroundColor = randomColor;
     body.style.transition = '.5s'
 })
