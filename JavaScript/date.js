@@ -1,12 +1,11 @@
-function getDate(){
-    let today = new Date();
-    let todayDate = today.getDate();
-    let month = today.getMonth();
-    let year = today.getFullYear();
+let date = new Date();
 
-    let updateDate = `${todayDate} / ${month} / ${year}`;
-    console.log(updateDate)
-    document.getElementById('update-time').innerText = updateDate;
-};
+let weekday = date.toLocaleString('en-US', {weekday:'short'});
+document.getElementById('week-day').innerText = weekday + ',';
 
-// getDate()
+let month = date.toLocaleString('en-US', {month: 'short'});
+let currentDay = date.getDate();
+let year = date.getFullYear();
+document.getElementById('present-date').innerText = `${month} ${currentDay} ${year}`;
+
+
